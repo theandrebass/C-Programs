@@ -1,11 +1,11 @@
 #include <stdio.h>
 void bubble_sort(int *A,int size){
-  for(int i=0;i<=size-2;i++)
-    for(int j=size-1;j>i;j--){
-      if(A[j]<A[j-1]){
-        int temp=A[j];
-        A[j]=A[j-1];
-        A[j-1]=temp;
+  for(int i = 0; i <= size - 2; i++)
+    for(int j = size - 1; j > i; j--){
+      if(A[j] < A[j - 1]){
+        int temp = A[j];
+        A[j] = A[j - 1];
+        A[j - 1] = temp;
       }
     }
 }
